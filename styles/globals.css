@@ -1,0 +1,24 @@
+:root{--bg:#0A0A0C;--panel:#0F1014;--glass:rgba(255,255,255,0.06);--gold:#D1A954;--gold-2:#F3D389;--text:#EAECEF;--muted:#A6A9B3;--success:#00E1A1;--error:#FF6B6B;--shadow:0 10px 30px rgba(0,0,0,0.45)}
+*{box-sizing:border-box}
+html,body{padding:0;margin:0;background:radial-gradient(80% 120% at 50% 0%, #111218 0%, #0A0A0C 60%, #070708 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,Roboto,Segoe UI}
+a{color:inherit;text-decoration:none} button{cursor:pointer}
+.container{max-width:1180px;margin:0 auto;padding:24px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:16px;box-shadow:var(--shadow);backdrop-filter:blur(10px)}
+.card.golden{border-color:rgba(209,169,84,.35)}
+.gtext{background:linear-gradient(90deg,var(--gold),var(--gold-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:var(--text);font-weight:700}
+.btn:hover{border-color:var(--gold);box-shadow:0 6px 22px rgba(209,169,84,.18)}
+.btn.gold{background:linear-gradient(180deg,#F3D389,#D1A954);color:#1A1A1D;border:none}
+.btn.ghost{background:transparent}
+.grid{display:grid;gap:20px}
+.kpi{padding:18px;border-radius:16px;border:1px dashed rgba(255,255,255,.12)}
+.kpi .label{font-size:12px;color:var(--muted)} .kpi .value{font-size:28px;font-weight:800}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+.pill{padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);color:var(--muted);font-weight:700}
+.pill.active{border-color:var(--gold);color:var(--text);box-shadow:0 0 0 1px rgba(209,169,84,.3), inset 0 0 30px rgba(209,169,84,.08)}
+table{width:100%;border-collapse:separate;border-spacing:0 10px} th,td{padding:10px 12px}
+tr{background:rgba(255,255,255,.03);border-radius:12px}
+tr td:first-child, tr th:first-child{border-top-left-radius:12px;border-bottom-left-radius:12px}
+tr td:last-child, tr th:last-child{border-top-right-radius:12px;border-bottom-right-radius:12px}
+.float{animation:float 8s ease-in-out infinite}
+@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
